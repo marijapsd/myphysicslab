@@ -86,7 +86,7 @@ constructor(elem_ids) {
   pn = sim.getParameterNumber(DoublePendulumSim.en.ROD_1_LENGTH);
   this.addControl(new SliderControl(pn, 0.1, 10.1, /*multiply=*/true));
 
-  pn = sim.getParameterNumber(DoublePendulumSim.en.ROD_2_LENGTH);
+  pn = 2-pn;
   this.addControl(new SliderControl(pn, 0.1, 10.1, /*multiply=*/true));
 
   pn = sim.getParameterNumber(DoublePendulumSim.en.MASS_1);
